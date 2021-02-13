@@ -1,12 +1,6 @@
-import React from 'react';
-import styles from './footer.module.css';
+import React, { memo } from "react";
+import styles from "./Footer.module.css";
 
-const Footer = () => {
-	return (
-		<footer className={styles.footer}>
-			<p className={styles.title}>Code your Funncy</p>
-		</footer>
-	);
-};
+const Footer = memo(() => <footer className={styles.footer}></footer>);
 
 export default Footer;
